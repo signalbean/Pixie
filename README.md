@@ -5,7 +5,6 @@ Get unlimited original quality storage in Google Photos by making your device lo
 ## What it does
 - Gives you unlimited original quality photo and video backup
 - Works without Zygisk or LSPosed
-- Only affects Google Photos, nothing else
 
 ## How to install
 1. Flash the ZIP file in Magisk Manager
@@ -26,8 +25,6 @@ pm list features | grep NEXUS_PRELOAD
 ```
 This should show the NEXUS_PRELOAD feature
 
-You can also check in Google Photos: Go to Settings → Backup and it should show "Original quality"
-
 ## What you need
 - Android 13 or newer
 - Magisk 24.0 or newer (or similar root solution)
@@ -39,11 +36,6 @@ The module does two things:
 2. Changes your device properties to make it appear as a Pixel XL to Google's servers
 
 ## What files does it modify
-- `system/product/etc/sysconfig/pixelify.xml` - Adds the special feature flags
+- `system/product/etc/sysconfig/pixie.xml` - Adds the special feature flags
 - `system.prop` - Changes device properties to Pixel XL
 - `post-fs-data.sh` - Makes sure the properties are set correctly
-
-## Important notes
-- This only works with Google Photos, it won't affect other apps
-- Photos you uploaded before installing this will keep their original quality setting
-- Google might change how they check for Pixel devices, which could break this module
