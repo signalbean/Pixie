@@ -9,9 +9,9 @@
 ##########################################################################################
 
 SKIPMOUNT=false
-PROPFILE=true
-POSTFSDATA=true
+PROPFILE=false
 LATESTARTSERVICE=false
+POSTFSDATA=true
 
 ##########################################################################################
 # Install
