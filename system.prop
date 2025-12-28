@@ -1,5 +1,4 @@
 # Pixel XL device properties
-ro.product.brand=google
 ro.product.manufacturer=Google
 ro.product.model=Pixel XL
 ro.product.device=marlin

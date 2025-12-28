@@ -2,7 +2,6 @@
 MODDIR=${0%/*}
 
 # Spoof device as Pixel XL globally
-resetprop ro.product.brand google
 resetprop ro.product.manufacturer Google
 resetprop ro.product.model "Pixel XL"
 resetprop ro.product.device marlin
