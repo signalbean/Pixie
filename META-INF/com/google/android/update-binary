@@ -1,5 +1,3 @@
-#!/sbin/sh
-
 umask 022
 
 ui_print() { echo "$1"; }
