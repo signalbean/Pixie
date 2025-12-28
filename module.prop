@@ -4,3 +4,4 @@ version=1.2
 versionCode=12
 author=SignalBean
 description=Unlocks unlimited storage in Google Photos.
+updateJson=https://raw.githubusercontent.com/signalbean/Pixie/main/update.json
