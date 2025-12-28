@@ -1,0 +1,8 @@
+ro.product.brand=Google
+ro.product.manufacturer=Google
+ro.product.model=Pixel XL
+ro.product.device=marlin
+ro.product.name=marlin
+ro.build.product=marlin
+ro.build.fingerprint=google/marlin/marlin:10/QP1A.191005.007.A3/5972272:user/release-keys
+ro.opa.eligible_device=true
