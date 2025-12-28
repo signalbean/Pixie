@@ -19,7 +19,7 @@ LATESTARTSERVICE=false
 
 print_modname() {
   ui_print "*******************************"
-  ui_print "        Pixelify Photos        "
+  ui_print "             Pixie             "
   ui_print "*******************************"
 }
 

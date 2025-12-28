@@ -1,6 +1,6 @@
 #!/system/bin/sh
 
-# Uninstall script for Pixelify Photos module
+# Uninstall script for Pixie module
 
-ui_print "Pixelify Photos module removed."
+ui_print "Pixie module removed."
 ui_print "Please reboot your device"

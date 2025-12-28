@@ -1,46 +1,49 @@
-# Pixelify Photos - Unlimited Storage
+# Pixie - Unlimited Google Photos Storage
 
-Magisk module that unlocks unlimited original quality storage in Google Photos by spoofing as Pixel XL.
+Get unlimited original quality storage in Google Photos by making your device look like a Pixel XL.
 
-## Features
-- Unlimited original quality photo/video backup
-- No Zygisk/LSPosed required
+## What it does
+- Gives you unlimited original quality photo and video backup
+- Works without Zygisk or LSPosed
+- Only affects Google Photos, nothing else
 
-## How It Works
-Combines two methods:
-1. **Sysconfig feature flags** - Adds `NEXUS_PRELOAD` feature that Google Photos checks
-2. **Device property spoofing** - Makes device appear as Pixel XL to Google servers
-
-## Installation
-1. Flash ZIP in Magisk Manager
-2. Reboot
-3. Clear Google Photos data (Settings → Apps → Google Photos → Storage → Clear data)
+## How to install
+1. Flash the ZIP file in Magisk Manager
+2. Reboot your device
+3. Go to Settings → Apps → Google Photos → Storage → Clear data
 4. Reboot again
-5. Open Google Photos and sign in
+5. Open Google Photos and sign in to your account
 
-## Verification
-Check if it worked:
+## How to check if it works
+Open a terminal and run these commands:
 ```bash
-# Should show "Pixel XL"
 getprop ro.product.model
+```
+This should show "Pixel XL"
 
-# Should show NEXUS_PRELOAD feature
+```bash
 pm list features | grep NEXUS_PRELOAD
 ```
+This should show the NEXUS_PRELOAD feature
 
-In Google Photos: Settings → Backup → Should show "Original quality"
+You can also check in Google Photos: Go to Settings → Backup and it should show "Original quality"
 
-## Requirements
-- Android 13+
-- Magisk 24.0+ or Similar
-- Google Photos installed
+## What you need
+- Android 13 or newer
+- Magisk 24.0 or newer (or similar root solution)
+- Google Photos app installed
 
-## Files
-- `system/product/etc/sysconfig/pixelify.xml` - Feature flags
-- `system.prop` - Pixel XL properties
-- `post-fs-data.sh` - Runtime property spoofing
+## How it works
+The module does two things:
+1. Adds special feature flags that Google Photos looks for
+2. Changes your device properties to make it appear as a Pixel XL to Google's servers
 
-## Notes
-- Only affects Google Photos, not other apps
-- Previously uploaded photos keep their original quality setting
-- May break if Google changes server-side validation
+## What files does it modify
+- `system/product/etc/sysconfig/pixelify.xml` - Adds the special feature flags
+- `system.prop` - Changes device properties to Pixel XL
+- `post-fs-data.sh` - Makes sure the properties are set correctly
+
+## Important notes
+- This only works with Google Photos, it won't affect other apps
+- Photos you uploaded before installing this will keep their original quality setting
+- Google might change how they check for Pixel devices, which could break this module

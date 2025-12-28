@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Build script for Pixelify Photos Module
+# Build script for Pixie Module
 
-MODULE_NAME="pixelify_photos"
+MODULE_NAME="pixie"
 VERSION=$(grep "^version=" module.prop | cut -d'=' -f2)
 OUTPUT_ZIP="${MODULE_NAME}-v${VERSION}.zip"
 
