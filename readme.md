@@ -1,39 +1,26 @@
-# Pixie - Unlimited Google Photos Storage
+# Pixie
 
-Get unlimited backup in Google Photos by making your device look like a Pixel XL.
+Magisk/APatch module that provides Google Photos backup by spoofing device as Pixel XL.
 
-## What it does
-- Gives you unlimited original quality photo and video backup
-- Works without Zygisk or LSPosed
+## Features
 
-## How to install
-1. Flash the ZIP file in Magisk Manager
-2. Reboot your device
-3. Go to Settings → Apps → Google Photos → Storage → Clear data
-4. Reboot again
-5. Open Google Photos and sign in to your account
+- Global Pixel XL device spoofing
+- Unlocks unlimited Google Photos backup
 
-## How to check if it works
-Open a terminal and run these commands:
-```bash
-getprop ro.product.model
-```
-This should show "Pixel XL"
+## Installation
 
-```bash
-pm list features | grep NEXUS_PRELOAD
-```
-This should show the NEXUS_PRELOAD feature
-
-## What you need
-- Android 12+
-- Magisk 23+ (or similar root solution)
+1. Download zip file
+2. Flash via Magisk/APatch
+3. Reboot
+4. Open Google Photos - should show "unlimited backup"
 
 ## How it works
-The module does two things:
-1. Adds special feature flags that Google Photos looks for
-2. Changes your device properties to make it appear as a Pixel XL to Google's servers
 
-## What files does it modify
-- `system/product/etc/sysconfig/pixie.xml` - Adds the special feature flags
-- `post-fs-data.sh` - Makes sure the properties are set correctly
+- `system.prop` - Spoofs device identity to Pixel XL
+- `sysconfig/pixie.xml` - Enables Google Photos feature flags
+
+## Compatibility
+
+- Requires Magisk/APatch
+- Works on Android 8+
+- Global device spoofing (affects all apps)
