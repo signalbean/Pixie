@@ -37,5 +37,4 @@ The module does two things:
 
 ## What files does it modify
 - `system/product/etc/sysconfig/pixie.xml` - Adds the special feature flags
-- `system.prop` - Changes device properties to Pixel XL
 - `post-fs-data.sh` - Makes sure the properties are set correctly
