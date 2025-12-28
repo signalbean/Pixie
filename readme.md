@@ -1,6 +1,6 @@
 # Pixie - Unlimited Google Photos Storage
 
-Get unlimited original quality storage in Google Photos by making your device look like a Pixel XL.
+Get unlimited backup in Google Photos by making your device look like a Pixel XL.
 
 ## What it does
 - Gives you unlimited original quality photo and video backup
@@ -26,9 +26,8 @@ pm list features | grep NEXUS_PRELOAD
 This should show the NEXUS_PRELOAD feature
 
 ## What you need
-- Android 13 or newer
-- Magisk 24.0 or newer (or similar root solution)
-- Google Photos app installed
+- Android 12+
+- Magisk 23+ (or similar root solution)
 
 ## How it works
 The module does two things:
