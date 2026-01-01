@@ -1,26 +1,22 @@
 # Pixie
 
-Magisk/APatch module that provides Google Photos backup by spoofing device as Pixel XL.
+Magisk module that provides Google Photos backup by spoofing device as Pixel XL.
 
 ## Features
 
-- Global Pixel XL device spoofing
+- Pixel XL device spoofing
 - Unlocks unlimited Google Photos backup
 
 ## Installation
 
 1. Download zip file
-2. Flash via Magisk/APatch
+2. Flash via Magisk
 3. Reboot
 4. Open Google Photos - should show "unlimited backup"
 
-## How it works
+## Downloads
 
-- `system.prop` - Spoofs device identity to Pixel XL
-- `sysconfig/pixie.xml` - Enables Google Photos feature flags
+- Check releases page for zip files
 
-## Compatibility
-
-- Requires Magisk/APatch
-- Works on Android 8+
-- Global device spoofing (affects all apps)
+1. Prop version - uses prop file for global build spoofing
+2. Zygisk version - hooks only the photos app for spoofing
